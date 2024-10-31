@@ -3,6 +3,8 @@ function randomFromArray(arr) {
 	return arr[Math.floor(Math.random() * arr.length)]
 }
 
+console.log('Easy Exercices\n\n')
+
 // Exercice #1
 function greet() {
 	console.log('Hello, World!')
@@ -72,6 +74,7 @@ function calculateArea(length, width) {
 // Exercice #12
 function findMax(number1, number2) {
 	const highestNumber = Math.max(number1, number2)
+
 	console.log(highestNumber)
 }
 
@@ -79,12 +82,14 @@ function findMax(number1, number2) {
 function countVowels(str) {
 	const regex = /[^aeiou]+/gi // not vowels
 	const allVowels = str.replaceAll(regex, '')
+
 	console.log(`${str} - ${allVowels.length} vowels found`)
 }
 
 // Exercice #14
 function calculateDiscount(price, discountPercentage) {
 	const decimalPercentage = discountPercentage / 100
+
 	console.log(`${price * decimalPercentage} SEK`)
 }
 
